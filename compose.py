@@ -125,7 +125,8 @@ def main():
                    fill=RULE, width=1)
         y += block_h
 
-    # Footer.
+    # Footer, framed by a single gold rule like the one under the masthead.
+    d.line([mx, 940, W - mx, 940], fill=GOLD, width=2)
     f_foot = font(SANS, 18)
     foot = "Compiled from wire and UN reports \u00b7 24 November 2026"
     d.text(((W - d.textlength(foot, font=f_foot)) / 2, 968), foot,
